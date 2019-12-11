@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAnimator : MonoBehaviour
 {
     // Start is called before the first frame update
-    SpriteRenderer[] sprites;
+    public Sprite[] sprites;
     public float framesPerSecond;
     private SpriteRenderer spriteRenderer;
     void Start()
