@@ -16,9 +16,11 @@ public class PlayerAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int index = (int)(Time.timeSinceLevelLoad * framesPerSecond);
-        index = index % sprites.Length;
-        spriteRenderer.sprite = sprites[index]; 
-        
+        if (Input.GetButton("Fire1"))
+        {
+            int index = (int)(Time.timeSinceLevelLoad * framesPerSecond);
+            index = index % sprites.Length;
+            spriteRenderer.sprite = sprites[index];
+        }
     }
 }

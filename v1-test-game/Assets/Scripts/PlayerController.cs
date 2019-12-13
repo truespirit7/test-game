@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
             moveDirection = moveToward - currentPosition;
             moveDirection.z = 0;
             moveDirection.Normalize();
+            Vector3 target = moveDirection * moveSpeed + currentPosition;
+            transform.position = Vector3.Lerp(currentPosition, target, Time.deltaTime);
         }
     }
 }
