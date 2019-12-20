@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainMenu.unity
+    guid: f7489865e40e8c24689fef3b51d2bb09
+  - enabled: 1
+    path: Assets/Scenes/WalkOfFame.unity
+    guid: a8d343cc69b627e43944dea6e0e1a5d5
   m_configObjects: {}
